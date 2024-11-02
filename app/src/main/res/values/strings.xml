@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MADjcomponent</string>
+    <string name="app_logo">App Logo</string>
+    <string name="welcome_to_vit_complaint_connect">Welcome to VIT Complaint Connect</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="student_login">Student Login</string>
+    <string name="university_complaint_form">University Complaint Form</string>
+    <string name="for_any_assistance_please_contact">For any assistance, please contact:</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="choose_category">Choose Category</string>
+    <string-array name="complaint_categories">
+
+    <item>Academic</item>
+    <item>Administrative</item>
+    <item>Facilities</item>
+    <item>Harassment</item>
+    <item>Other</item>
+</string-array>
+</resources>

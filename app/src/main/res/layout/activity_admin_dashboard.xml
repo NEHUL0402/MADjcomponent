@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FDFDFD"> <!-- Light Gray background -->
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- View Complaints Button -->
+    <Button
+        android:id="@+id/btnViewComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Complaints"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- View Profile Button -->
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search Student Button -->
+    <Button
+        android:id="@+id/btnSearchStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Student"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Help/Support Button -->
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help and Support"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="18sp"
+        android:backgroundTint="#D32F2F"
+    android:textColor="#FFFFFF"
+    android:padding="10dp"
+    android:layout_marginTop="20dp" />
+
+</LinearLayout>

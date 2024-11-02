@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FDFDFD">
+    <TextView
+        android:id="@+id/tvSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Student by Registration Number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- Registration Number Input -->
+    <EditText
+        android:id="@+id/etRegNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Registration Number"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+</LinearLayout>

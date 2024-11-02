@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#E1F5FE"> <!-- Light blue background -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_and_support"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#0D47A1" /> <!-- Dark blue text -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_any_assistance_please_contact"
+        android:textSize="18sp"
+        android:textColor="#000000"
+    android:paddingTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="support@vit.edu"
+        android:textSize="16sp"
+        android:textColor="#1976D2"
+    android:paddingTop="8dp"
+    android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 1234567890"
+        android:textSize="16sp"
+        android:textColor="#1976D2"
+    android:paddingTop="8dp"
+    android:textStyle="italic"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Support"
+        android:background="#1976D2"
+    android:textColor="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call Support"
+        android:background="#1976D2"
+    android:textColor="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FDFDFD"> <!-- Light Gray background -->
+
+    <!-- Admin Name -->
+    <TextView
+        android:id="@+id/tvAdminName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Admin Email -->
+    <TextView
+        android:id="@+id/tvAdminEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin@example.com"
+        android:textSize="18sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Admin Phone Number -->
+    <TextView
+        android:id="@+id/tvAdminPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +1234567890"
+        android:textSize="18sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Admin Address -->
+    <TextView
+        android:id="@+id/tvAdminAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: 123 Admin St, Admin City"
+        android:textSize="18sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="18sp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
