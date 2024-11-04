@@ -5,24 +5,28 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    >
+    android:background="#FDFDFD">
 
     <TextView
         android:id="@+id/textViewDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:textColor="#212121"
         android:padding="20dp"
-        android:layout_marginBottom="50dp"
-        />
-
-
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp" />
 
     <Button
         android:id="@+id/buttonHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Home"
-        android:layout_gravity="bottom"
-        android:padding="12dp" />
+        android:textSize="18sp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp" />
 </LinearLayout>

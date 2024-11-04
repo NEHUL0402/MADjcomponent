@@ -46,7 +46,7 @@ public class SearchStudentActivity extends AppCompatActivity {
                 // Redirect to the admin dashboard
                 Intent intent = new Intent(SearchStudentActivity.this, AdminDashboardActivity.class);
                 startActivity(intent);
-                finish(); // Close this activity
+                
             }
         });
     }

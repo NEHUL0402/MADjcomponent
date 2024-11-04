@@ -18,6 +18,38 @@ public class SharedPreferencesManager {
         gson = new Gson(); // Gson instance for JSON conversion
     }
 
+
+
+    // Method to delete complaints by student ID
+    public boolean deleteComplaintByStudentId(String studentId) {
+        List<Complaint> complaints = getComplaints();
+        boolean isDeleted = false;
+
+        // Iterate and remove complaints with the given student ID
+        for (int i = 0; i < complaints.size(); i++) {
+            Complaint complaint = complaints.get(i);
+            if (complaint.getStudentId().equals(studentId)) {
+                complaints.remove(i);
+                isDeleted = true;
+                i--; // Adjust index after removal to prevent skipping
+            }
+        }
+
+        if (isDeleted) {
+            // Save the updated list back to SharedPreferences
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("complaints", gson.toJson(complaints));
+            editor.apply();
+        }
+
+        return isDeleted; // Return whether any complaints were deleted
+    }
+
+
+
+
+
+
     // Method to save complaint details
     public void saveComplaintDetails(Complaint complaint) {
         // Retrieve existing complaints

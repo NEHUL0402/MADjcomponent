@@ -3,23 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FDFDFD"> <!-- Light Gray background -->
+    android:padding="24dp"
+    android:background="#E3F2FD">
 
-    <!-- App Title -->
     <TextView
         android:id="@+id/tvAdminTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Admin Dashboard"
-        android:textSize="28sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#212121"
+        android:textColor="#0D47A1"
         android:gravity="center"
         android:layout_gravity="center"
-        android:paddingBottom="20dp"/>
+        android:paddingBottom="24dp" />
 
-    <!-- View Complaints Button -->
     <Button
         android:id="@+id/btnViewComplaints"
         android:layout_width="match_parent"
@@ -28,10 +26,12 @@
         android:textSize="18sp"
         android:backgroundTint="#0D47A1"
         android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
 
-    <!-- View Profile Button -->
+
+
     <Button
         android:id="@+id/btnViewProfile"
         android:layout_width="match_parent"
@@ -40,10 +40,10 @@
         android:textSize="18sp"
         android:backgroundTint="#0D47A1"
         android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
 
-    <!-- Search Student Button -->
     <Button
         android:id="@+id/btnSearchStudent"
         android:layout_width="match_parent"
@@ -52,10 +52,10 @@
         android:textSize="18sp"
         android:backgroundTint="#0D47A1"
         android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
 
-    <!-- Help/Support Button -->
     <Button
         android:id="@+id/btnHelp"
         android:layout_width="match_parent"
@@ -64,10 +64,21 @@
         android:textSize="18sp"
         android:backgroundTint="#0D47A1"
         android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
+    <Button
+        android:id="@+id/btndeleteComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Complaint"
+        android:textSize="18sp"
+        android:backgroundTint="#C62828"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp" />
 
-    <!-- Log Out Button -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
@@ -75,8 +86,9 @@
         android:text="Log Out"
         android:textSize="18sp"
         android:backgroundTint="#D32F2F"
-    android:textColor="#FFFFFF"
-    android:padding="10dp"
-    android:layout_marginTop="20dp" />
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp" />
 
 </LinearLayout>

@@ -18,12 +18,13 @@ public class ComplaintDetailsAdminActivity extends AppCompatActivity {
 
         // Find the TextView and Button in the layout
         TextView textViewComplaintDetails = findViewById(R.id.textViewComplaint);
-        Button buttonHome = findViewById(R.id.buttonHome);
+
 
         // Retrieve and display all complaints
         String allComplaints = sharedPreferencesManager.displayAllComplaints();
         textViewComplaintDetails.setText(allComplaints);
 
+        Button buttonHome = findViewById(R.id.buttonHome);
         // Set button functionality to return to admin dashboard
         buttonHome.setOnClickListener(v -> {
             Intent intent = new Intent(ComplaintDetailsAdminActivity.this, AdminDashboardActivity.class);

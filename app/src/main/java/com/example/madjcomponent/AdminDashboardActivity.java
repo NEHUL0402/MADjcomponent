@@ -20,6 +20,8 @@ public class AdminDashboardActivity extends AppCompatActivity {
         Button btnSearchStudent = findViewById(R.id.btnSearchStudent);
         Button btnHelp = findViewById(R.id.btnHelp);
         Button btnLogout = findViewById(R.id.btnLogout); // Reference to the Log Out button
+        Button btndeleteComplaint = findViewById(R.id.btndeleteComplaint);
+
 
         // Get username from intent
         username = getIntent().getStringExtra("USERNAME");
@@ -48,9 +50,22 @@ public class AdminDashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AdminDashboardActivity.this, SearchStudentActivity.class);
+                intent.putExtra("USERNAME", username);
                 startActivity(intent);
             }
         });
+
+
+
+        btndeleteComplaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminDashboardActivity.this, DeleteComplaintActivity.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
+            }
+        });
+
 
 
 

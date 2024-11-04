@@ -2,6 +2,7 @@ package com.example.madjcomponent;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +23,8 @@ public class StudentDashboardActivity extends AppCompatActivity {
         Button btnHelp = findViewById(R.id.btnHelp);
         Button btnLogout = findViewById(R.id.btnLogout); // Reference to the Log Out button
 
+        Button btndeleteComplaint = findViewById(R.id.btndeleteComplaint);
+
         // Redirect to SubmitComplaintActivity and pass the username
         btnNewComplaint.setOnClickListener(view -> {
             Intent intent = new Intent(StudentDashboardActivity.this, SubmitComplaintActivity.class);
@@ -36,9 +39,21 @@ public class StudentDashboardActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+        btndeleteComplaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudentDashboardActivity.this, DeleteComplaintActivity.class);
+                intent.putExtra("USERNAME", username);
+                startActivity(intent);
+            }
+        });
+
+
         // Redirect to HelpSupportActivity
         btnHelp.setOnClickListener(view -> {
             Intent intent = new Intent(StudentDashboardActivity.this, HelpSupportActivity.class);
+            intent.putExtra("USERNAME", username);
             startActivity(intent);
         });
 

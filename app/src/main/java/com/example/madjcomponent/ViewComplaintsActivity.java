@@ -1,6 +1,8 @@
 package com.example.madjcomponent;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +28,13 @@ public class ViewComplaintsActivity extends AppCompatActivity {
         TextView tvWelcome = findViewById(R.id.tvWelcomeUser);
         TextView tvComplaintsList = findViewById(R.id.tvComplaintsList); // Assuming you have another TextView to display the complaints
 
+        Button buttonHome = findViewById(R.id.buttonHome);
+        // Set button functionality to return to admin dashboard
+        buttonHome.setOnClickListener(v -> {
+            Intent intent = new Intent(ViewComplaintsActivity.this, StudentDashboardActivity.class);
+            intent.putExtra("USERNAME", username);
+            startActivity(intent);
+        });
         // Display the username
         tvWelcome.setText("Welcome, " + username);
 
